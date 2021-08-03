@@ -55,6 +55,6 @@ server = smtplib.SMTP('smtp.gmail.com', port)
 server.starttls()
 server.login(sender_mail,password)
 server.sendmail(sender_mail,receiver_mail,message)
-#data sends to this mail
+#data sends to entered mail
 print("Email Sent to ",sender_mail)
 server.quit()
